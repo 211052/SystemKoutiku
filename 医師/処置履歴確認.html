@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>処置履歴確認</title>
+</head>
+<body>
+    <h1>処置履歴確認</h1>
+    <form action="treatmentHistory.php" method="post">
+        <label for="patientId">患者ID:</label>
+        <input type="text" id="patientId" name="patientId" required>
+        <button type="submit">検索</button>
+    </form>
+
+    <!-- 処理結果表示 -->
+    <div id="result">
+        <!-- PHP等で処理結果を表示する部分 -->
+        <!-- 例: 過去の処置履歴を表示する -->
+        <ul>
+            <li>処置1</li>
+            <li>処置2</li>
+            <li>処置3</li>
+        </ul>
+        <!-- もしくは、処置履歴がない場合のメッセージを表示する -->
+        <!-- <p>該当患者の処置履歴がありません。</p> -->
+    </div>
+
+    <!-- メニューに戻るボタン -->
+    <button onclick="location.href='menu.php'">ホーム画面に戻る</button>
+</body>
+</html>

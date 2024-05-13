@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>機能選択</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>機能選択</h1>
+    <div class="buttons">
+        <button onclick="location.href='patientSearch.php'">患者検索</button>
+        <button onclick="location.href='medicationInstruction.php'">薬投与指示機能</button>
+        <button onclick="location.href='medicationDeletion.php'">薬投与削除機能</button>
+        <button onclick="location.href='treatmentConfirmation.php'">処置確定機能</button>
+        <button onclick="location.href='treatmentHistoryConfirmation.php'">処置履歴確認機能</button>
+    </div>
+</body>
+</html>

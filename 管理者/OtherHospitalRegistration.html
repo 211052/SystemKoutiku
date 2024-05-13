@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/OtherHospitalRegistration.css">
+    <title>他病院登録</title>
+</head>
+<body>
+    <div class="flex">
+        <h1>他病院登録</h1>
+        <form action="registerHospital.php" method="post">
+            <div>
+                <label for="hospitalId">他病院ID:</label>
+                <input type="text" id="hospitalId" name="hospitalId" required>
+            </div>
+            <div>
+                <label for="hospitalName">他病院名:</label>
+                <input type="text" id="hospitalName" name="hospitalName" required>
+            </div>
+            <div>
+                <label for="hospitalAddress">他病院住所:</label>
+                <input type="text" id="hospitalAddress" name="hospitalAddress" required>
+            </div>
+            <div>
+                <label for="hospitalPhone">他病院電話番号:</label>
+                <input type="text" id="hospitalPhone" name="hospitalPhone" required>
+            </div>
+            <div>
+                <label for="capital">資本金:</label>
+                <input type="number" id="capital" name="capital" required>
+            </div>
+            <div>
+                <label for="emergencyResponse">救急対応:</label>
+                <select id="emergencyResponse" name="emergencyResponse" required>
+                    <option value="">選択してください</option>
+                    <option value="yes">対応あり</option>
+                    <option value="no">対応なし</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">登録確認</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

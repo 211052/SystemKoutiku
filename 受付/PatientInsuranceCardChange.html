@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/PatientInsuranceCardChange.css">
+    <title>患者保険証変更</title>
+</head>
+<body>
+    <h1>患者保険証変更</h1>
+    <div class="flex">
+        <form action="updateInsurance.php" method="post">
+            <div>
+                <label for="patientId">患者ID:</label>
+                <input type="text" id="patientId" name="patientId" required>
+            </div>
+            <div>
+                <label for="lastName">患者姓:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div>
+                <label for="firstName">患者名:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div>
+                <label for="insuranceNumber">保険証記号番号:</label>
+                <input type="text" id="insuranceNumber" name="insuranceNumber">
+            </div>
+            <div>
+                <label for="expiryDate">有効期限:</label>
+                <input type="date" id="expiryDate" name="expiryDate">
+            </div>
+            <div>
+                <button type="submit">変更確認</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
