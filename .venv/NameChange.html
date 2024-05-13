@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>従業員情報更新</title>
+  <link rel="stylesheet" href="NameChange.css">
+</head>
+<body>
+    <h1>従業員情報更新</h1>
+    <div class="flex">
+    <form action="searchEmployee.php" method="post">
+        <div>
+            <label for="userId">ユーザーID:</label>
+            <input type="text" id="userId" name="userId" required>
+            <button type="submit">検索</button>
+        </div>
+    </form>
+    <form action="updateEmployee.php" method="post">
+        <div>
+            <label for="lastName">姓:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div>
+            <label for="firstName">名:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div>
+            <button type="submit">変更確認</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
